@@ -4,7 +4,7 @@
 
 MetaPavo 是一个 Web3 信息 分类管理/搜索/识别 的应用。它旨在帮助 Web3 用户快速获取对他们有用的信息。
 
-![](<.gitbook/assets/dreamstime_xxl_250002267 (2) (1).jpg>)
+![](<.gitbook/assets/dreamstime\_xxl\_250002267 (2) (1).jpg>)
 
 MetaPavo 名字源自一种孔雀品种，它生活在东南亚和南亚地区，有蓝色和绿色两种颜色。
 
@@ -20,29 +20,35 @@ MetaPavo 的核心产品是一个 chrome 插件，它的核心模块包括默认
 
 ### 一、个人信息工作台，聚合关注的信息，按照 Web3 的特性对信息分类
 
-- 一个浏览器默认新开页
-- 一个可编排和调整的工作台
-- 一个个人关注的 Web3 信息的快速入口
+* 一个浏览器默认新开页
+* 一个可编排和调整的工作台
+* 一个个人关注的 Web3 信息的快速入口
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### 二、随时随地快速唤起搜索，搜索各类 Web3 信息
 
-- 任意页随时唤起，搜索各种类别的信息
-- 支持各种信息分类
-  - NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companys
+* 任意页随时唤起，搜索各种类别的信息
+* 支持各种信息分类
+  * NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companys
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 三、浏览既识别，在浏览时帮助你识别信息，并快速连接或采集信息
 
-- 一个悬浮在浏览器右下角的可以变化形态的小组件
-- 支持各类信息的识别和小组件
-  - NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companys, 危险识别和提醒
-- 支持各种平台的信息识别
-  - Opensea, Twitter, Website, Etherscan, Gem, X2V2, Looksrare, Sudoswap, ...
+* 一个悬浮在浏览器右下角的可以变化形态的小组件
+* 支持各类信息的识别和小组件
+  * NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companys, 危险识别和提醒
+* 支持各种平台的信息识别
+  * Opensea, Twitter, Website, Etherscan, Gem, X2V2, Looksrare, Sudoswap, ...
 
-### 四、信息共享和价值挖掘，为社区贡献价值并获得激励
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-- 通过简单的行为贡献信息价值评价的数据
-- 通过社区的贡献评价信息价值
-- 为其他用户提供实时的、准确的价值判断的信息，使他们能够更好地了解 Web3 世界
+### 四、信息共享和价值挖掘，为社区贡献价值并获得激励（即将上线）
+
+* 通过简单的行为贡献信息价值评价的数据
+* 通过社区的贡献评价信息价值
+* 为其他用户提供实时的、准确的价值判断的信息，使他们能够更好地了解 Web3 世界
 
 ## MetaPavo 的实现机制
 
