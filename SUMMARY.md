@@ -4,3 +4,4 @@
 * [MetaPavo Whitepaper (en)](metapavo-whitepaper-en.md)
 * [MetaPavo invite and score rule](metapavo-invite-and-score-rule.md)
 * [MetaPavo Brand Resources](metapavo-brand-resources.md)
+* [User Security Manual（中文）](user-security-manual-zhong-wen.md)
