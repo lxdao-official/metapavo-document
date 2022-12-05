@@ -24,7 +24,7 @@ MetaPavo 的核心产品是一个 chrome 插件，它的核心模块包括默认
 * 一个可编排和调整的工作台
 * 一个个人关注的 Web3 信息的快速入口
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 二、随时随地快速唤起搜索，搜索各类 Web3 信息
 
@@ -32,7 +32,7 @@ MetaPavo 的核心产品是一个 chrome 插件，它的核心模块包括默认
 * 支持各种信息分类
   * NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companys
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### 三、浏览既识别，在浏览时帮助你识别信息，并快速连接或采集信息
 
@@ -42,7 +42,7 @@ MetaPavo 的核心产品是一个 chrome 插件，它的核心模块包括默认
 * 支持各种平台的信息识别
   * Opensea, Twitter, Website, Etherscan, Gem, X2V2, Looksrare, Sudoswap, ...
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 四、信息共享和价值挖掘，为社区贡献价值并获得激励（即将上线）
 
