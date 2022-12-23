@@ -47,55 +47,42 @@ Please rest assured to use it, we will do our best to protect your privacy, and 
 #### Information sharing and value mining, contribute value to the community and get incentives (coming soon)
 
 * Contribute data for information value evaluation through simple actions
-* 通过社区的贡献评价信息价值
-* 为其他用户提供实时的、准确的价值判断的信息，使他们能够更好地了解 Web3 世界
+* Assess information value through community contributions
+* Provide real-time and accurate value judgment information to other users, enabling them to better understand the Web3 world
 
-## MetaPavo 的实现机制
+### The implementation mechanism of MetaPavo
 
-这里我们核心解析一下这几个机制：信息搜索、信息识别、安全识别、工作台。
+Here we analyze the core mechanisms of these mechanisms: information search, information identification, security identification, and workbench.
 
-### 一、信息搜索
+### 1. information search
 
-信息搜索是 MetaPavo 的核心功能之一，它的实现机制是通过 chrome 插件的机制，将搜索组件注入到所有页面中，这样用户就可以在任意页面随时唤起搜索组件，进行搜索。
+Information search is one of the core functions of MetaPavo. Its implementation mechanism is to inject the search component into all pages through the chrome plug-in mechanism, so that users can invoke the search component at any time on any page to search. Behind the search is a simple search engine, and its search results are obtained from the API of each platform. We classify and mark various types of information in the data service to provide users with classified search results.
 
-搜索的背后是一个简单的搜索引擎，它的搜索结果是从各个平台的 API 中获取的。
+### 2. information identification
 
-我们在数据服务中对各类信息进行了分类标记，为用户提供已经分类好的搜索结果。
+Similarly, information identification also injects information identification components into all pages through the chrome plug-in mechanism. When you browse a specific website, we will scan the specific content on the page locally, and then identify it according to the subject classification, such as NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companies and other information, once the identification is successful , we will obtain their detailed information, expand the information identification component, and display the information in the information identification component.
 
-### 二、信息识别
+### 3. security identification
 
-同样的，信息识别也是通过 chrome 插件的机制，将信息识别组件注入到所有页面中。在您浏览特定网站的时候，我们会在本地扫描页面中特定的内容，然后将其按照主体分类识别出来，例如 NFTs, Tokens, DAPPs, KOLS, Articles, Premints, DAOs, Companys 等信息，一旦识别成功，我们会获取他们的详细信息，展开信息识别组件，并将这些信息展示在信息识别组件中。
+In the process of browsing twitter or other websites, we will scan and identify dangerous content on the page, such as phishing websites, malicious websites, fake twitter accounts, etc. Once the identification is successful, we will remind users in an obvious way.
 
-### 三、安全识别
+### 4. workbench
 
-在浏览 twitter 或者其他网站的过程中，我们会扫描并识别页面中的危险内容，例如钓鱼网站、恶意网站、伪装的 twitter 账号等，一旦识别成功，我们会以明显的方式提醒用户。
+The workbench uses the new tabs function of the chrome plug-in to override the default new page of the browser. Every time you open a new blank tab, the MetaPavo workbench interface will be opened by default. On this page, you can search, view favorite information, adjust the position and visibility of modules, etc., and customize your own workbench。
 
-### 四、工作台
+### The Future of MetaPavo
 
-工作台利用了 chrome 插件的 new tabs 功能来覆盖浏览器默认的新开页，每次您打开一个新的空白标签页的时候，都会默认打开 MetaPavo 的工作台界面。
+The future of MetaPavo is a super search engine + content interactive community + personal information assistant
 
-在此页面中，你可以搜索、查看收藏的信息、调整模块的位置和显隐等，定制属于自己的工作台。
+### 1. Personal information assistant
 
-## MetaPavo 的未来
+Through the evolution of product form and the introduction of more information content, we will provide users with more convenient, anytime, anywhere, and smarter information services, such as personal workbenches on mobile terminals, and make more in-depth connections with other platforms.
 
-MetaPavo 的未来是一个超级搜索引擎 + 内容互动社区 + 个人信息助理
+### 2. Super search engine
 
-### 一、个人信息助理
+MetaPavo's search engine will support the access of more platform data, support the access of more types of data, introduce more intelligent search algorithms, and provide users with more accurate search results.
 
-通过产品形态的进化，和更多信息内容的引入，为用户提供更方便、更随时随地、更智能的信息服务，例如 移动端的个人工作台，并且和其他平台做更为深入的打通。
+### 3. Content Interactive Community
 
-### 二、超级搜索引擎
+MetaPavo will encourage users to conduct decentralized evaluation, recommendation, and collection of information, dig out valuable information in real time, and reach users who need this information, forming a benign closed loop of information value.
 
-MetaPavo 的搜索引擎将会支持更多的平台数据的接入，支持更多类型数据的接入，引入更为智能的搜索算法，为用户提供更加精准的搜索结果。
-
-### 三、内容互动社区
-
-MetaPavo 将会鼓励用户对信息进行去中心化的评价、推荐、收藏等，将有价值的信息实时挖掘出来，并且触达给需要这些信息的用户，形成一个良性的信息价值闭环。
-
-###
-
-
-
-### MetaPavo 的积分和邀请
-
-[https://app.gitbook.com/o/uDVzlEbUc4No2a3goLbv/s/6WtCEw0AEOaALLXB4oFD/\~/changes/67arttaVBiyh3tJsdn9x/metapavo-invite-and-score-rule](metapavo-invite-and-score-rule.md)
