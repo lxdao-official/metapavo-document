@@ -2,49 +2,49 @@
 
 ## User Security Manual
 
-1. 本插件会向您申请以下浏览器权限，**所有的权限使用都透明开放，不会涉及任何用户敏感数据操作**。
-   1. **tabs 权限，用来打开登录页面**，另外在插件中统一获取 gas 数据，并发送给所有页面，在页面右下角时时刻刻显示实时的 gas 费。
-   2. **storage 权限**，此权限**用来存储一些缓存数据**，例如用户 session 和少量缓存数据。
-   3. topSites 权限，获取用户最常使用的网站，在新开页中显示这些网站，方便使用。
-2. 本插件会默认替换您的新开页，当然您也可以选择不替换，但是会失去大部分功能。
-3. 除此之外，我们不会申请任何其他权限，另外特别强调以下内容：
-   1. 由于浏览器的限制，**我们没有权限读取和写入用户的剪贴板**，但是我们依然建议您不要在电脑中复制粘贴私钥，这是一个非常不安全的行为。
-   2. 浏览器插件是一个沙箱环境，**我们无法获取您网页上正在运行的程序的内容**，包括页面里注入的 MetaMask 实例等，同时**我们也无法获取任何其他插件的数据**，例如钱包插件的数据，您可放心使用我们的插件。**这是浏览器为您提供的安全保障，是插件无法突破的限制。**
-4. 为了实现我们的基本功能，我们会获取什么？
-   1. 在您使用我们较为深入的功能时，我们**需要您使用钱包登录并做一次明文签名**，**这个明文签名将会用于验证您拥有您的钱包控制权，所有需要登陆的 Web3 APP 都会有这一步，是安全的**。我们会为您在服务端生成一个唯一的用户 ID，后续您的收藏项目和闹钟等都可以在不同设备上同步。
-      1. 此操作只需要钱包做一次明文签名，不会发起任何真实的交易，**我们唯一的目的就是验证你是该钱包的拥有者**，用以在服务端生成唯一的用户。
-      2. 在使用钱包签名一次之后，7 天内您的登录状态都会保留，不需要重新签名。
-      3. 在此过程中，我们唯一获取的数据就是您的钱包地址和明文签名的 signature。
-   2. MetaPavo 的核心功能是为您高效识别出当前网页的更多的 Web3 相关信息，并且为您展示，实现逻辑如下：
-      1. 针对 Twitter 个人主页，我们会在页面中获取到 Twitter id，之后发起请求验证是否有项目是本 Twitter 的关联方，并返回项目信息，此时前端的 MetaPavo 球会滑出项目的信息。
-      2. 针对交易平台（OpenSea、x2y2、gem、sudoswap、looksrare 等），我们会首先从 URL 中匹配合约地址、项目名称、tokenId，然后将此信息发送给服务端查询相关的项目信息，查询成功后，前端的 MetaPavo 球会滑出项目信息。
-      3. 针对其他网站，我们会获取网站的 URL，将其发送给服务端查询相关项目信息，查询成功后，前端的 MetaPavo 球会滑出项目信息。
-      4. 我们插件提供了 History 功能方便回顾近期看过的项目，目前该数据为本地存储。
-      5. 声明一：\*\*在以上向服务端发送信息查询项目的过程中，我们将仅做数据查询，不会传递和存储任何可以关联用户的数据。我们也完全不会用到诸如 Cookie 技术来追踪您。\*\*因此，我们无法获取用户的具体访问行为，我们并不需要这些数据，也不会记录这些数据。
-      6. 声明二：目前市面上**绝大部分常见的信息辅助插件均会获取页面信息来进行数据查询并展示。**
+1. This plug-in will apply for the following browser permissions from you. **All permissions are used transparently and will not involve any user sensitive data operations**.
+   1. **tabs permission, used to open the login page**, in addition, the gas data is uniformly obtained in the plug-in, and sent to all pages, and the real-time gas fee is displayed at the bottom right corner of the page all the time.
+   2. **storage permission**, this permission **is used to store some cached data**, such as user sessions and a small amount of cached data.
+   3. **topSites permission**, obtain the most frequently used websites of users, and display these websites in the new page for easy use.
+2. This plugin will replace your newly opened page by default, of course you can also choose not to replace, but most of the functions will be lost.
+3. Apart from this, we will not apply for any other permissions, and we especially emphasize the following:
+   1. Due to browser restrictions, **we do not have permission to read and write to the user's clipboard**, but we still recommend that you do not copy and paste the private key on the computer, which is a very unsafe behavior.
+   2. The browser plug-in is a sandbox environment, **we cannot obtain the content of the program running on your webpage**, including the MetaMask instance injected into the page, etc. At the same time, **we cannot obtain the data of any other plug-ins\* \*, such as wallet plug-in data, you can use our plug-in with confidence. **This is the security guarantee provided by the browser, and it is a limitation that plug-ins cannot break through. \*\*
+4. What will we obtain in order to realize our basic functions?
+   1. When you use our more in-depth functions, we **require you to log in with your wallet and make a plaintext signature**, **this plaintext signature will be used to verify that you have control of your wallet, and all users who need to log in Web3 APP will have this step, which is safe**. We will generate a unique user ID for you on the server side, and your favorite items and alarm clocks can be synchronized on different devices in the future.
+      1. This operation only requires the wallet to make a clear text signature once, and will not initiate any real transactions. **Our only purpose is to verify that you are the owner of the wallet** to generate a unique user on the server.
+      2. After using the wallet to sign once, your login status will be retained within 7 days, and there is no need to re-sign.
+      3. During this process, the only data we obtain is your wallet address and the signature of the plaintext signature.
+   2. The core function of MetaPavo is to efficiently identify more Web3 related information of the current webpage for you, and display it for you. The implementation logic is as follows:
+      1. For the Twitter personal homepage, we will get the Twitter id on the page, and then initiate a request to verify whether there is a project that is an affiliated party of this Twitter, and return the project information. At this time, the MetaPavo ball at the front end will slide out the project information.
+      2. For trading platforms (OpenSea, x2y2, gem, sudoswap, looksrare, etc.), we will first match the contract address, project name, tokenId from the URL, and then send this information to the server to query related project information. After the query is successful , the front-end MetaPavo ball will slide out item information.
+      3. For other websites, we will obtain the URL of the website and send it to the server to query relevant project information. After the query is successful, the MetaPavo ball at the front end will slide out the project information.
+      4. Our plug-in provides the History function to facilitate review of recently viewed items, and the data is currently stored locally.
+      5. Statement 1: \*\*In the process of sending information query items to the server above, we will only do data query, and will not transfer and store any data that can be associated with users. We also do not use technologies such as cookies to track you at all. \*\* Therefore, we cannot obtain the specific access behavior of users, we do not need these data, and we will not record these data.
+      6. Statement 2: At present, most of the most common information assistance plug-ins on the market will obtain page information for data query and display. \*\*
 
-### 我们如何保障安全性？
+### How do we ensure security?
 
-#### 本项目由 [LXDAO](https://lxdao.io/) 发起维护
+#### This project is maintained by [LXDAO](https://lxdao.io/)
 
-* **LXDAO 是一个专注研发的 Web3 DAO 组织**。LX = 良心 是我们的核心价值观，我们希望为 Web3 做一些有价值和意义的项目。
-* 我们正在**用 Web3 的方式协作为 Web3 用户打造一些好用有价值的 Web3 产品。**
-* **LXDAO 的产品由社区监督并且全流程公开透明**，绝大部分代码将会开源，**所有人都可以申请加入 LXDAO 并且深度参与项目研发。**
-* **LXDAO 的产品从技术和商业上都没有作恶的需求**，因为项目组成员就来自社区，大家利益是一致的。这也是 Web3 协作的优势之一。
+- **LXDAO is a Web3 DAO organization that focuses on research and development**. LX = conscience is our core value, we hope to do some valuable and meaningful projects for Web3.
+- We are collaborating in a Web3 way to create some useful and valuable Web3 products for Web3 users. \*\*
+- **LXDAO's products are supervised by the community and the whole process is open and transparent**. Most of the code will be open source. **Everyone can apply to join LXDAO and deeply participate in project development. **
+- **LXDAO's products have no technical and commercial needs to do evil**, because the project team members come from the community, and everyone's interests are the same. This is also one of the advantages of Web3 collaboration.
 
-#### 我们将会把插件代码开源
+#### We will open source the plugin code
 
-* 目前考虑到快速修改和代码质量，我们暂未开源，如果有兴趣和能力进行贡献或者审计，可以联系我们将你的 GitHub 账号拉入项目。
-* 在结束我们的内测产出稳定的版本之后，**将会整理插件代码并且开源，届时所有人都可以审计代码看到具体的实现逻辑**。我们也将会通过插件商店等官方渠道进行发布。
+- At present, considering the rapid modification and code quality, we have not open sourced yet. If you are interested and able to contribute or audit, you can contact us to pull your GitHub account into the project.
+- After finishing our internal testing and producing a stable version, **will sort out the plug-in code and make it open source, then everyone can audit the code to see the specific implementation logic**. We will also release it through official channels such as the plug-in store.
 
-#### 总结
+#### Summarize
 
-1. 我们不会获取任何多余的权限，例如剪贴板等，所有权限均已列出。
-2. 我们无法获取您浏览的页面上的 JS 环境，也没法获取和控制其他插件的内容和数据，**这是浏览器插件隔离机制保证的，是我们想做也做不到的。**
-3. 我们不会保存跟您的账户能关联起来的查询数据。
-4. 我们不需要您的钱包发起任何交易，**连接钱包只需要一次明文签名，仅用于验证您拥有该钱包的控制权**。
-5. **MetaPavo 由 LXDAO 发起和维护**，是基于 DAO 的方式，社区驱动的产物，公开透明也没有作恶的需求。
+1. We don't get any redundant permissions like clipboard, etc. All permissions are listed.
+2. We cannot obtain the JS environment on the page you browse, nor can we obtain and control the content and data of other plug-ins. **This is guaranteed by the isolation mechanism of browser plug-ins, which we cannot do even if we want to. **
+3. We will not save query data that can be associated with your account.
+4. We don't need your wallet to initiate any transactions. **Connecting to the wallet requires only one clear text signature, which is only used to verify that you have control over the wallet**.
+5. **MetaPavo is initiated and maintained by LXDAO**. It is a DAO-based, community-driven product, open and transparent, and has no need for evil.
 
-#### 免责声明：
+#### Disclaimer:
 
-在产品迭代过程中，随着社区反馈和需求的增加，部分功能和逻辑会发生变化。项目组成员将尽量及时更新本文档，可能会有延迟或者不一致的地方。**但是不变的是作为一个 DAO，我们保持公开透明并欢迎任何人申请加入，欢迎社区提出质疑和讨论，因为这样才能真正让产品更加成功，为大家带来更多利益和更安全的体验。这也是为什么我们要用 Web3 的方式来创造和维护产品的原因之一。**
+During the product iteration process, some functions and logic will change as community feedback and demands increase. Project team members will try to update this document in a timely manner, there may be delays or inconsistencies. ** But what remains unchanged is that as a DAO, we remain open and transparent and welcome anyone to apply to join. We welcome the community to raise questions and discuss, because this can truly make the product more successful, bring more benefits and a safer experience for everyone . This is one of the reasons why we use the Web3 way to create and maintain products. **
