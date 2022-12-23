@@ -7,7 +7,7 @@
 
 1. 生成5000个备用邀请码，供官方发放。
 2. 任意地址登录后可再生成三个邀请码（一次）。
-3. 通过 Quest3 完成任务 claim nft 后（polygon），直接跳过邀请码登录。
+3. 通过 Quest3 完成任务 claim nft 后（polygon），直接跳过邀请码登录（[https://app.quest3.xyz/quest/720487061415424154](https://app.quest3.xyz/quest/720487061415424154)）。
 
 ### 邀请激励：
 
