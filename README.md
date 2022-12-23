@@ -2,9 +2,9 @@
 
 ## MetaPavo 是什么？
 
-MetaPavo 是一个 Web3 信息 分类管理/搜索/识别 的应用。它旨在帮助 Web3 用户快速获取对他们有用的信息。
+MetaPavo 是一个 Web3 个人信息助理，具备 分类管理信息/搜索/识别 等核心能力。它旨在帮助 Web3 用户快速获取对他们有用的信息。
 
-![](<.gitbook/assets/dreamstime\_xxl\_250002267 (2) (1).jpg>)
+![](<.gitbook/assets/dreamstime\_xxl\_250002267 (2).jpg>)
 
 MetaPavo 名字源自一种孔雀品种，它生活在东南亚和南亚地区，有蓝色和绿色两种颜色。
 
