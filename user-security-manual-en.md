@@ -1,4 +1,4 @@
-# User Security Manual（中文）
+# User Security Manual(en)
 
 ## User Security Manual
 
